@@ -8,39 +8,39 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="0dp"
+        android:layout_width="382dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/design_default_color_primary"
         android:onClick="showToast"
         android:text="@string/button_label_toast"
         android:textColor="#433E3E"
+        android:textSize="60sp"
         app:backgroundTint="#F4C35E"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/show_count"
+        app:layout_constraintEnd_toStartOf="@+id/button_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="0dp"
+        android:layout_width="383dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:background="@color/design_default_color_primary"
         android:onClick="countUp"
         android:text="@string/button_label_count"
         android:textColor="#433E3E"
+        android:textSize="60sp"
         app:backgroundTint="#F4C35E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_toast"
+        app:layout_constraintStart_toEndOf="@+id/button_toast" />
 
     <TextView
         android:id="@+id/show_count"
@@ -57,9 +57,9 @@
         android:text="@string/count_initial_value"
         android:textAlignment="center"
         android:textColor="#988A74"
-        android:textSize="160sp"
+        android:textSize="200sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast" />
