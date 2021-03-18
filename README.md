@@ -1,3 +1,5 @@
-# Coding Challenge
+# Lab 2 Home Work
 ### App screenshot
-![](./coding_challenge.png)
+![](./1.png)
+![](./2.png)
+![](./3.png)
